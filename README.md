@@ -14,6 +14,8 @@ but the result seems to work fine for now
 
 see [GitHub release](https://github.com/dropout-zzz/qxl_winxp_2k3_x64/releases)
 
+here, note about this: Windows XP x64 and Windows Server 2003 x64 share the same driver!
+
 ## installation
 
 to install unsigned driver, open control panel and select "System"
