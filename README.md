@@ -60,6 +60,9 @@ cd /d C:\Folder
 inf2cat /driver:C:\Folder /os:XP_X64,Server2003_X64
 ```
 
+> [!NOTE]
+> `inf2cat` needs [dotnet 3.5](#installing-dotnet-35)
+
 ## appendix
 
 ### installing dotnet 3.5
