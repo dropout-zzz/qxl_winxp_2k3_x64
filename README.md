@@ -38,6 +38,9 @@ but i guess instructions also works for Windows 10 and etc.
 
 thanks [this documentation](https://virtio-win.github.io/Development/Building-the-drivers-using-Visual-Studio-2017#3-install-wdk-for-windows-7-required-to-build-drivers-for-legacy-os-ie-xp-wnet-vista) for linking a suitable WDK
 
+> [!NOTE]
+> spice-protocol is a submodule in qxl's Git repository, but maintainers appear to have forgotten to update it. to not get a bunch of funny errors, be sure to replace it with correct version (as listed above).
+
 ## instructions
 
 ### building
