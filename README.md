@@ -49,6 +49,12 @@ cd ..\display
 build -cZg
 ```
 
+### disclaimer
+
+this was largely assisted by chatgpt provided reasoning
+
+but the result seems to work fine for now
+
 ### packaging
 
 1. create an empty directory, say you have "C:\Folder"
