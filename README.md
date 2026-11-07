@@ -16,7 +16,7 @@ see [GitHub release](https://github.com/dropout-zzz/qxl_winxp_2k3_x64/releases)
 
 here, note about this: Windows XP x64 and Windows Server 2003 x64 share the same driver!
 
-<img width="1919" height="967" alt="demo screenshot image" src="https://github.com/user-attachments/assets/9ad8faf8-01a1-4a9e-b200-ba69abda0901" />
+<img width="1920" height="941" alt="demo screen-shot image" src="https://github.com/user-attachments/assets/a591151f-8a14-4421-a720-2c59a3d1fe32" />
 
 
 ## installation
