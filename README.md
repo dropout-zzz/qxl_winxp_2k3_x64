@@ -1,6 +1,6 @@
 this compiles QXL display driver for x64 edition of Windows Server 2003 and Windows XP
 
-it improves guest display performance in virt-manager
+it improves guest display performance in virt-manager with QEMU/KVM
 
 (it's said that winserver 2k3 shares code base and kernel with xp x64, but i only tested the xp.)
 
