@@ -34,7 +34,7 @@ but i guess instructions also works for Windows 10 and etc.
 
 - [WDK 7.1.0](https://www.microsoft.com/en-us/download/details.aspx?id=11800)
 - [spice-protocol 0.12.10](https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/spice-protocol/0.12.10-1/spice-protocol_0.12.10.orig.tar.bz2)
-- [qxl e3371bd2](https://gitlab.freedesktop.org/spice/win32/qxl/-/archive/e3371bd2d26473dd42798ae392e0c4cdc6a63a06/qxl-e3371bd2d26473dd42798ae392e0c4cdc6a63a06.zip)
+- [qxl e3371bd2](https://gitlab.freedesktop.org/spice/win32/qxl/-/archive/e3371bd2d26473dd42798ae392e0c4cdc6a63a06/qxl-e3371bd2d26473dd42798ae392e0c4cdc6a63a06.zip) (this is just the master branch at time i build)
 
 thanks [this documentation](https://virtio-win.github.io/Development/Building-the-drivers-using-Visual-Studio-2017#3-install-wdk-for-windows-7-required-to-build-drivers-for-legacy-os-ie-xp-wnet-vista) for linking a suitable WDK
 
