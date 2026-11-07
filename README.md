@@ -22,7 +22,11 @@ thanks [this documentation](https://virtio-win.github.io/Development/Building-th
 
 ## instructions
 
-### install dotnet 3.5 offline
+## appendix
+
+### installing dotnet 3.5
+
+this installs dotnet 3.5 offline
 
 > [!NOTE]
 > if you have Internet and Windows Update works for you, you can just enable dotnet 3.5 in Windows Features and skip this section.
