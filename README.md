@@ -8,6 +8,16 @@ it improves guest display performance in virt-manager
 
 see [GitHub release](https://github.com/dropout-zzz/qxl_winxp_2k3_x64/releases)
 
+## installation
+
+to install unsigned driver, open control panel and select "System"
+
+find "Hardware" tab in opened window, find "Driver Signing" button
+
+change to "Ignore"
+
+open Device Manager, use "Update Driver" on your monitor device, say "Install from a specific location", then "Don't search", and then "Have Disk", now select the "qxl.inf" file.
+
 ## build environment
 
 as a reference, i used a Quickemu VM running x64 version of Windows 11 25H2 build 26200.8037
@@ -23,6 +33,32 @@ but i guess instructions also works for Windows 10 and etc.
 thanks [this documentation](https://virtio-win.github.io/Development/Building-the-drivers-using-Visual-Studio-2017#3-install-wdk-for-windows-7-required-to-build-drivers-for-legacy-os-ie-xp-wnet-vista) for linking a suitable WDK
 
 ## instructions
+
+### building
+
+1. extract qxl source zip, say you got "C:\qxl"
+2. extract spice-protocol source tarball, stripping useless components and rename folder into "spice-protocol"
+3. move prepared spice-protocol folder into qxl source tree
+4. open a command prompt, then run:
+```
+cd /d C:\WinDDK\7600.16385.1
+bin\setenv.bat C:\WinDDK\7600.16385.1 fre x64 WNET
+cd /d C:\qxl\xddm\miniport
+build -cZg
+cd ..\display
+build -cZg
+```
+
+### packaging
+
+1. create an empty directory, say you have "C:\Folder"
+2. collect "qxl.sys" and "qxldd.dll" from output directories
+3. copy "qxl.inf" from source tree
+4. generate "qxl.cat" (you need the same command prompt setup from previous building section):
+```
+cd /d C:\Folder
+inf2cat /driver:C:\Folder /os:XP_X64,Server2003_X64
+```
 
 ## appendix
 
