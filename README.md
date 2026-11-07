@@ -58,6 +58,8 @@ cd ..\display
 build -cZg
 ```
 
+(i did not use build scripts provided in qxl source tree, but i did read them)
+
 ### packaging
 
 1. create an empty directory, say you have "C:\Folder"
