@@ -18,6 +18,8 @@ as a reference, i used a Quickemu VM running x64 version of Windows 11 25H2 buil
 - [spice-protocol 0.12.10](https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/spice-protocol/0.12.10-1/spice-protocol_0.12.10.orig.tar.bz2)
 - [qxl e3371bd2](https://gitlab.freedesktop.org/spice/win32/qxl/-/archive/e3371bd2d26473dd42798ae392e0c4cdc6a63a06/qxl-e3371bd2d26473dd42798ae392e0c4cdc6a63a06.zip)
 
+thanks [this documentation](https://virtio-win.github.io/Development/Building-the-drivers-using-Visual-Studio-2017#3-install-wdk-for-windows-7-required-to-build-drivers-for-legacy-os-ie-xp-wnet-vista) for linking a suitable WDK
+
 ## instructions
 
 ### install dotnet 3.5 offline
