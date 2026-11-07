@@ -1,12 +1,16 @@
-this compiles QXL driver for x64 edition of Windows Server 2003 and Windows XP
+this compiles QXL display driver for x64 edition of Windows Server 2003 and Windows XP
+
+it improves guest display performance in virt-manager
+
+(it's said that winserver 2k3 shares code base and kernel with xp x64, but i only tested the xp.)
 
 ## pre-compiled driver download
 
-see GitHub release
+see [GitHub release](https://github.com/dropout-zzz/qxl_winxp_2k3_x64/releases)
 
 ## build environment
 
-i used a Quickemu VM running x64 version of Windows 11 25H2 build 26200.8037
+as a reference, i used a Quickemu VM running x64 version of Windows 11 25H2 build 26200.8037
 
 ## needed stuffs
 
@@ -18,25 +22,39 @@ i used a Quickemu VM running x64 version of Windows 11 25H2 build 26200.8037
 
 ### install dotnet 3.5 offline
 
-[credit](https://shrimpmaru.hatenablog.com/entry/windows/enable_dotnet_framework_3-5/)
+> [!NOTE]
+> if you have Internet and Windows Update works for you, you can just enable dotnet 3.5 in Windows Features and skip this section.
+
+credits: thanks to [this post](https://shrimpmaru.hatenablog.com/entry/windows/enable_dotnet_framework_3-5/)
+
+do not follow steps in this section if you have win11 26H1 and higher
+
+instead you want to use [this installer](https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-11#windows-11-26h1-build-28000-and-later)
+
+unfortunately, the installer refuses to run on older systems
 
 #### grab installation files
 
-search exact Windows version on [UUP dump](https://uupdump.net/)
+search your exact Windows version on [UUP dump](https://uupdump.net/)
 
-this gives a script to download UUP set into `UUPs` folder
+this gives a script to download UUP set into "UUPs" folder
 
-find an ESD file which name starts with edition of your Windows version, follow by language code
+find an ESD file which name starts with edition of your Windows, follow by language code. in my case, it's "professional_ja-jp.esd"
 
-run `wiminfo` to find `Index` correspond to Setup
+(you may be able to reduce download size by downloading only the ESD file by examining the aria2 script.)
 
-run `wimdir` with `Index`, look for a `.cab` file that says `NetFx3-OnDemand` in `/sources/sxs` 
+run `wiminfo` to find "Index" that corresponds to "Setup"
 
-extract the `.cab` file with `winextract` using `Index` and path you found
+run `wimdir` with "Index", look for a ".cab" file that says "NetFx3-OnDemand" in "/sources/sxs"
+
+extract the ".cab" file with `wimextract` using "Index" and path you found
+
+> [!NOTE]
+> you can get these `wim*` commands from [wimlib](https://wimlib.net)
 
 #### perform installation
 
-put the `.cab` file in an empty folder, say it's in `C:\MyFolder`
+put the ".cab" file in an empty folder, say it's in "C:\MyFolder"
 
 open a command prompt with admin rights, run:
 
