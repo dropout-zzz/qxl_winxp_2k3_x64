@@ -22,7 +22,7 @@ find "Hardware" tab in opened window, find "Driver Signing" button
 
 change to "Ignore"
 
-open Device Manager, use "Update Driver" on your monitor device, say "Install from a specific location", then "Don't search", and then "Have Disk", now select the "qxl.inf" file.
+open Device Manager, use "Update Driver" on your monitor device, say "Install from a specific location", then "Don't search", and then "Have Disk", now select the "qxl.inf" file. (IMPORTANT)
 
 ## build environment
 
