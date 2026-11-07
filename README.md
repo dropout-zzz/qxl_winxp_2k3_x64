@@ -12,7 +12,7 @@ see [GitHub release](https://github.com/dropout-zzz/qxl_winxp_2k3_x64/releases)
 
 as a reference, i used a Quickemu VM running x64 version of Windows 11 25H2 build 26200.8037
 
-instructions probably also works for Windows 10
+but i guess instructions also works for Windows 10 and etc.
 
 ## needed stuffs
 
