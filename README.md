@@ -58,6 +58,9 @@ cd ..\display
 build -cZg
 ```
 
+> [!NOTE]
+> WNET refers to Windows Server 2003, probably related to [its history](https://en.wikipedia.org/wiki/Windows_Server_2003#Development)
+
 (i did not use build scripts provided in qxl source tree, but i did read them)
 
 ### packaging
