@@ -4,6 +4,12 @@ it improves guest display performance in virt-manager
 
 (it's said that winserver 2k3 shares code base and kernel with xp x64, but i only tested the xp.)
 
+### disclaimer
+
+this was largely assisted by chatgpt-provided reasoning
+
+but the result seems to work fine for now
+
 ## pre-compiled driver download
 
 see [GitHub release](https://github.com/dropout-zzz/qxl_winxp_2k3_x64/releases)
@@ -48,12 +54,6 @@ build -cZg
 cd ..\display
 build -cZg
 ```
-
-### disclaimer
-
-this was largely assisted by chatgpt provided reasoning
-
-but the result seems to work fine for now
 
 ### packaging
 
